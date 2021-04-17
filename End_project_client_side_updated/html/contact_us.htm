@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/contact_us.css">
+    <script src="/JS/User_Management/Func.js"></script>
+    <script src="/JS/User_Management/register.js" defer type="module"></script>
+    <title>Contact us</title>
+</head>
+
+<body onload="profilePageLoaded()">
+    <header>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark warning-color">
+            <a href="/html/profile_page.htm" class="navbar-brand">
+                <img src="/images/logo.png" width="45px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://twitter.com/2048_game" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/2048.Biz" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/explore/tags/2048game/"
+                            class="nav-link waves-effect waves-light">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/channel/UCUT08DUJc3TqBxd_1vDxBtQ"
+                            class="nav-link waves-effect waves-light">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" id="name" href="/html/profile_page.htm"></a>
+                            <a class="dropdown-item" id="Logout" href="/html/index.htm">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--/.Navbar -->
+    <!-- Section: Contact v.1 -->
+    <section class="my-5">
+
+        <!-- Section heading -->
+        <h2 class="display-3">Contact us</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto pb-5">Our team here for any question about the game,<br> just send us a message and we'll respond back to you in 24 hours.</p>
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-lg-5 mb-lg-0 mb-4">
+
+                <!-- Form with header -->
+                <div class="card">
+                    <div class="card-body warning-color">
+                        <!-- Header -->
+                        <form id="contact-form" name="contact-form" action="mailto:gadikuper@gmail.com" method="GET"
+                            required>
+                            <div class="form-header brown accent-1">
+                                <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+                            </div>
+                            <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+                            <!-- Body -->
+                            <div class="md-form">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form-name" class="form-control" placeholder="Full Name" required>
+                                <label for="form-name"></label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="text" id="form-email" class="form-control" placeholder="Email" required>
+                                <label for="form-email"></label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form-Subject" class="form-control" placeholder="Subject"
+                                    required>
+                                <label for="form-Subject"></label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea id="form-text" class="form-control md-textarea"
+                                    placeholder="The message content" required rows="2"></textarea>
+                                <label for="form-text"></label>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-grey btn-rounded"
+                                    href="mailto:gadikuper@gmail.com?subject = Feedback&body = Message">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Form with header -->
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-7">
+
+                <!--Google map-->
+                <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 300px">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3370.862302879901!2d34.91013031501775!3d32.34240598110554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d16a555555555%3A0xeef2b9c4fa52e717!2sRuppin%20Academic%20Center!5e0!3m2!1sen!2sil!4v1596032943289!5m2!1sen!2sil"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <!-- Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Ruppin Academic Center<br> Emek Hefer, 4025000, Israel</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-phone"></i>
+                        <p>+ 972 234 567 89 <br>Mon - Fri, 8:00-22:00</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-envelope"></i>
+                        <p>Ruppin.Acdemic@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </section>
+    <!-- Section: Contact v.1 -->
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small warning-color pt-0">
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-0">
+        <li class="list-inline-item">
+            <h2 class="mb-1">Register to the game for free !</h2>
+        </li>
+        <li class="list-inline-item">
+            <a href="/html/register.htm" class="btn btn-outline-grey btn-rounded">Sign up!</a>
+        </li>
+    </ul>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center warning-color py-0">© 2020 Copyright:
+        <a href="/html/index.htm">2048.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>

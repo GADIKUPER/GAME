@@ -1,0 +1,155 @@
+body {
+  background: -webkit-linear-gradient(left, #8a8881, #f1dfa1);
+}
+
+.mb-1 {
+  margin: auto!important;
+  font-weight: bold!important;
+  font-style: italic!important;
+  color: #8f7a70!important;
+}
+
+header {
+  left: 0!important;
+  top: 0!important;
+  width: 100%!important;
+}
+
+a.nav-link {
+  font-weight: bold!important;
+  font-size: 17px!important;
+}
+
+.register {
+  padding: 2%;
+}
+
+.register-left {
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+
+.register-left input {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 3%;
+  width: 90%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-top: 30%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.register-right {
+  background: #dad3b728;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}
+
+.register-left img {
+  margin-top: 15% !important;
+  margin-bottom: 5% !important;
+  width: 25% !important;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.register-left p {
+  font-weight: lighter;
+  padding: 12% !important;
+  margin-top: -9% !important;
+}
+
+.register .register-form {
+  padding: 10%;
+  margin-top: 10%;
+}
+
+.btnRegister {
+  float: right;
+  margin-top: 10%;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #ffc107;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+  font-style: italic!important;
+}
+
+.btnlogin {
+  background: #ffc107;
+  color: #fff;
+}
+
+.register .nav-tabs .nav-link {
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.register-heading {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #fff;
+}
+
+a.dropdown-item {
+  font-size: 18px!important;
+  font-weight: normal!important;
+}
+
+h3.register-heading {
+  font-style: italic!important;
+  margin-right: 50%!important;
+  font-size: 35px!important;
+}
+
+p {
+  font-size: 18px!important;
+  color: whitesmoke!important;
+  font-style: italic!important;
+  font-weight: normal!important;
+}
+
+.imgPreImg {
+  display: none;
+  width: 100%;
+}
+
+.imgPre {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}

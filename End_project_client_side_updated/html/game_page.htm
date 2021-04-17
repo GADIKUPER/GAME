@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="/css/game.css" rel="stylesheet">
+    <script defer src="/JS/User_Management/Func.js"></script>
+    <script defer src="/JS/User_Management/register.js" type="module"></script>
+    <script defer src="/JS/Game/index.js"></script>
+    <script src="/JS/Game/liveGame.js"></script>
+    <script src="/JS/Game/board.js"></script>
+    <script src="/JS/Game/keyboard.js"></script>
+    <script src="/JS/Game/tile.js"></script>
+    <title>Game Area</title>
+</head>
+
+<body onload="profilePageLoaded()">
+    <header>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark warning-color">
+            <a href="/html/profile_page.htm" class="navbar-brand">
+                <img src="/images/logo.png" width="45px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.htm">Contact us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://twitter.com/2048_game" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/2048.Biz" class="nav-link waves-effect waves-light">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/explore/tags/2048game/"
+                            class="nav-link waves-effect waves-light">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/channel/UCUT08DUJc3TqBxd_1vDxBtQ"
+                            class="nav-link waves-effect waves-light">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" id="name" href="/html/profile_page.htm">Profile</a>
+                            <a class="dropdown-item" id="Logout" href="/html/index.htm">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="header">
+                <audio loop autoplay>
+                    <source src="/audio/song.mp3" type="audio/mpeg">
+                </audio>
+                <h1>2048</h1>
+                <div class="score"><strong>Score</strong><br />
+                    <span id="score">0</span>
+                </div>
+                <div class="best"><strong>Best</strong><br />
+                    <span id="best"></span>
+                </div>
+            </div>
+            <p class="summary">
+                Hit the arrow keys to slide the tiles<br> and reach the <span>2048</span> tile!
+            </p>
+            <button class="btn btn-outline-yellow btn-xl" type="submit">New Game</button>
+            <div class="grid-container-fluid">
+                <div id="0-0" class="grid-tile"></div>
+                <div id="1-0" class="grid-tile"></div>
+                <div id="2-0" class="grid-tile"></div>
+                <div id="3-0" class="grid-tile"></div>
+                <div id="0-1" class="grid-tile"></div>
+                <div id="1-1" class="grid-tile"></div>
+                <div id="2-1" class="grid-tile"></div>
+                <div id="3-1" class="grid-tile"></div>
+                <div id="0-2" class="grid-tile"></div>
+                <div id="1-2" class="grid-tile"></div>
+                <div id="2-2" class="grid-tile"></div>
+                <div id="3-2" class="grid-tile"></div>
+                <div id="0-3" class="grid-tile"></div>
+                <div id="1-3" class="grid-tile"></div>
+                <div id="2-3" class="grid-tile"></div>
+                <div id="3-3" class="grid-tile"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small warning-color pt-0 fixed-bottom">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a href="https://twitter.com/2048_game" class="btn-floating btn-tw mx-1">
+                <i class="fab fa-twitter"> </i>
+            </a>
+        </li>
+        <li href="https://www.facebook.com/2048.Biz" class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+                <i class="fab fa-facebook-f"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="https://www.instagram.com/explore/tags/2048game/" class="btn-floating btn-fb mx-1">
+                <i class="fab fa-instagram"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCUT08DUJc3TqBxd_1vDxBtQ" class="btn-floating btn-li mx-1">
+                <i class="fab fa-youtube"> </i>
+            </a>
+        </li>
+    </ul>
+    <div class="footer-copyright text-center warning-color py-0">© 2020 Copyright
+        <a href="/html/login.htm">2048.com</a>
+    </div>
+</footer>
+<!-- Footer -->
+
+</html>

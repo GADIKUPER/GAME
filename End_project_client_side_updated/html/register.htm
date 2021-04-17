@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!--link-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/rigister.css">
+    <script src="/json/jason.js" defer></script>
+    <script src="/JS/User_Management/register.js" defer type="module"></script>
+    <script src="/js/User_Management/Func.js"></script>
+    <title>Register Page</title>
+</head>
+
+<body onload="RegisterPageLoaded()">
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark warning-color">
+        <a href="/html/index.htm">
+            <img src="/images/logo.png" width="45px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/2048.Biz" class="nav-link waves-effect waves-light">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/.Navbar -->
+
+    <!--.rigister-->
+
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="/images/2048-logo.png" alt="" />
+                <h3>Welcome</h3>
+                <p>You are 30 seconds from the start of the thinking game.<br>
+                    Sign up and start to play !</p>
+            </div>
+            <div class="col-md-9 register-right">
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Registration form</h3>
+                        <form id="form">
+                            <div class="row register-form">
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+                                        <input id="First-Name" type="text" class="form-control"
+                                            placeholder="First Name *" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="Last-Name" type="text" class="form-control" placeholder="Last Name *"
+                                            required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="password" type="password" class="form-control"
+                                            placeholder="Password *" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="Confirm-Password" type="password" class="form-control"
+                                            placeholder="Confirm Password *" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="UserName" type="text" class="form-control" placeholder="UserName *"
+                                            required />
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Birthdate: </p>
+                                        <input id="Birthdate" type="date" class="form-control" placeholder="Birthdate"
+                                            required />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="maxl">
+                                            <label class="radio inline">
+                                                <input type="radio" name="gender" value="male" checked>
+                                                <span> Male </span>
+                                            </label>
+                                            <label class="radio inline">
+                                                <input type="radio" name="gender" value="female">
+                                                <span>Female </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="Your-Email" type="email" class="form-control"
+                                            placeholder="Your Email *" value="" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="city" type="text" list="cities" class="form-control"
+                                            placeholder="city *" required />
+                                        <datalist id="cities"></datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="street" type="text" class="form-control" placeholder="street "
+                                            required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="home-Number" type="number" minlength="10" maxlength="10"
+                                            name="txtEmpPhone" class="form-control" placeholder="home Number "
+                                            required />
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Choose picture: </p>
+                                        <input id="your-picture" type="file" class="form-control"
+                                            placeholder="Choose file" required />
+                                        <div class="imgPre" id="imgPrev">
+                                            <img src="" class="imgPreImg">
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btnRegister" value="Sign Up" />
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</div>
+<!--.rigister-->
+
+<!-- Footer -->
+<footer class="page-footer font-small-normal warning-color pt-0">
+    <div class="footer-copyright text-center warning-color py-1">© 2020 Copyright:
+        <a href="/html/index.htm">2048.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+</html>

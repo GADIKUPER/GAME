@@ -1,0 +1,94 @@
+html {
+    height: 100%!important;
+    width: 100%!important;
+}
+
+body {
+    display: block!important;
+    width: 100%!important;
+    overflow-x: hidden;
+}
+
+.mb-1 {
+    margin: auto!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+    color: #8f7a70!important;
+}
+
+header {
+    left: 0!important;
+    top: 0!important;
+    width: 100%!important;
+}
+
+a.nav-link {
+    font-weight: bold!important;
+    font-size: 17px!important;
+}
+
+.jumbotron {
+    background: -webkit-linear-gradient(left, #8a8881, #f1dfa1)!important;
+    font-style: italic!important;
+    text-anchor: black!important;
+    text-align: center!important;
+    display: block!important;
+    margin-bottom: 0%!important;
+    margin-top: 0%!important;
+}
+
+.frame {
+    padding-bottom: 5%!important;
+}
+
+h1 {
+    color: #f2b179!important;
+    text-shadow: 4px 4px 6px black!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+}
+
+h2 {
+    padding-top: auto!important;
+}
+
+.lead {
+    text-shadow: 2px 2px 4px lightgoldenrodyellow!important;
+    color: black!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+}
+
+p {
+    text-shadow: 2px 2px 4px lightgoldenrodyellow!important;
+    font-weight: bold!important;
+    font-size: 18px!important;
+
+}
+
+.btn {
+    font-size: 17px!important;
+    color: black!important;
+    font-weight: bold!important;
+    margin-bottom: 5px!important;
+    background-color: transparent!important;
+}
+
+.img-fluid {
+    width: 35%!important;
+    border-radius: 1%;
+    box-shadow: 10px 10px 5px black;
+    -moz-box-shadow: 10px 10px 5px black;
+    -webkit-box-shadow: 10px 10px 5px black;
+    -khtml-box-shadow: 10px 10px 5px black;
+}
+
+a#name {
+    font-size: 17px!important;
+    font-weight: normal!important;
+}
+
+a#Logout {
+    font-size: 17px!important;
+    font-weight: normal!important;
+}

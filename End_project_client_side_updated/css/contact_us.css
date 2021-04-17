@@ -1,0 +1,199 @@
+html {
+    height: 100%;
+    display: flex;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #8a8881, #f1dfa1);
+    display: block!important;
+    width: 100%!important;
+    overflow-x: hidden;
+}
+
+.mb-1 {
+    margin: auto!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+    color: #8f7a70!important;
+}
+
+a.nav-link {
+    font-weight: bold!important;
+    font-size: 17px!important;
+}
+
+.btn-floating i {
+    display: inline-block;
+    width: inherit;
+    background: -webkit-linear-gradient(left, #8a8881, #f1dfa1)!important;
+    text-align: center;
+}
+
+.lead {
+    text-shadow: 2px 2px 4px lightgoldenrodyellow!important;
+    color: black!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+}
+
+p {
+    font-weight: bold!important;
+}
+
+h2 {
+    color: #f2b179!important;
+    text-shadow: 2px 2px 4px black!important;
+    font-weight: normal!important;
+    font-style: italic!important;
+    text-align: center!important;
+}
+
+.map-container-section {
+    overflow: hidden;
+    margin-left: 5%;
+    width: 90% !important;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0!important;
+    border-radius: 3px!important;
+}
+
+.map-container-section iframe {
+    left: 0!important;
+    top: 0!important;
+    height: 100%!important;
+    width: 100%!important;
+    position: absolute!important;
+}
+
+.my-5 {
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+.card-body {
+    font-weight: bold!important;
+    background-color: beige!important;
+    border-radius: 3px!important;
+}
+
+h3 {
+    font-style: italic!important;
+}
+
+.mt-2 {
+    background-color: beige!important;
+    color: black!important;
+    font-weight: bold!important;
+}
+
+.btn {
+    color: black!important;
+    font-weight: bold!important;
+    background-color: transparent!important;
+    border-radius: 3px!important;
+}
+
+p {
+    font-size: 18px!important;
+    font-style: italic!important;
+    font-weight: bold!important;
+    text-shadow: 2px 2px 4px lightgoldenrodyellow!important;
+    color: black!important;
+    font-style: italic!important;
+}
+
+label {
+    font-weight: normal!important;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+.aniImg>img {
+    margin-top: 1.2em!important;
+    margin-left: 35%!important;
+    margin-right: 45%!important;
+    width: 300px !important;
+}
+
+.alrazy-title {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 10em;
+    font-size: calc( 100vw / var(--char-total));
+    position: relative;
+    padding: 0.4em 0;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 40%;
+    margin-top: 10%;
+}
+
+.alrazy-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid 0.5em;
+    -webkit-animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
+    animation: underline 1s cubic-bezier(0.8, 0, 0, 1);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    width: 25%;
+    margin-top: 15%;
+    margin-left: 35%;
+    margin-right: 20%;
+}
+
+@-webkit-keyframes underline {
+    from {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+}
+
+@keyframes underline {
+    from {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+}
+
+.alrazy-title .word {
+    display: inline-block;
+    -webkit-animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+    animation: slide-up 1.25s cubic-bezier(0.5, 0.2, 0, 1);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: calc( .5s + (.1s * var(--word-index)));
+    animation-delay: calc( .5s + (.1s * var(--word-index)));
+}
+
+@-webkit-keyframes slide-up {
+    from {
+        -webkit-transform: translateY(125%);
+        transform: translateY(125%);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        -webkit-transform: translateY(125%);
+        transform: translateY(125%);
+    }
+}
+
+.splitting-mark {
+    color: #FFF !important;
+}
+
+a#name {
+    font-size: 17px!important;
+    font-weight: normal!important;
+}
+
+a#Logout {
+    font-size: 17px!important;
+    font-weight: normal!important;
+}

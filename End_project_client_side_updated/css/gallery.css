@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(234, 243, 240)!important;
+    display: block!important;
+    text-align: center!important;
+}
+
+.mb-1 {
+    margin: auto!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+    color: #8f7a70!important;
+}
+
+a.nav-link {
+    font-weight: bold!important;
+    font-size: 17px!important;
+}
+
+.jumbotron {
+    background: -webkit-linear-gradient(left, #8a8881, #f1dfa1);
+    font-style: italic!important;
+    text-anchor: black!important;
+    text-align: center!important;
+    margin: auto!important;
+}
+
+.frame {
+    padding-bottom: 10em!important;
+}
+
+h1 {
+    color: #f2b179!important;
+    text-shadow: 4px 4px 6px black!important;
+    margin-top: -5% !important;
+    font-style: italic!important;
+    font-size: 70px!important;
+    margin-bottom: -5% !important;
+}
+
+/*
+שינוי גודל התמונה ,הצללה + לעגל את הפינות
+*/
+
+.d-block {
+    display: block !important;
+    margin: auto !important;
+    margin-top: 0% !important;
+    width: 60% !important;
+    height: 50% !important;
+    box-shadow: black 25%;
+    border-radius: 2.5%;
+    box-shadow: 10px 0px 50px rgb(161, 161, 248);
+}
+
+/*
+שינוי צבע רקע לכפתורים ומיקומים
+*/
+
+.carousel-control-prev, .carousel-control-next {
+    height: 10% !important;
+    width: 4% !important;
+    outline: black;
+    background-color: rgba(0.5, 0.8, 0.8, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-top: 15%!important;
+    margin-left: 15%!important;
+    margin-right: 15%!important;
+}
+
+/*
+עיצוב לתמונה מספר 1 עם הסרטון
+*/
+
+.img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50% !important;
+    height: 65%;
+    width: 75%;
+    box-shadow: 10px 10px 50px black !important;
+}
+
+.img-fluid2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50% !important;
+    height: 65%;
+    width: 75%;
+    box-shadow: 10px 10px 50px black !important;
+}
+
+.img-fluid3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50% !important;
+    height: 65%;
+    width: 75%;
+    box-shadow: 10px 10px 50px black !important;
+}
+
+.pragraf {
+    margin-top: 10% !important;
+    margin-right: 15% !important;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.btn {
+    color: black!important;
+    font-weight: bold!important;
+    margin-bottom: 5px!important;
+    background-color: transparent!important;
+}
+
+.mb-12 {
+    margin: auto!important;
+    font-weight: bold!important;
+    font-style: italic!important;
+    color: #8f7a70!important;
+}
+
+a {
+    font-weight: normal!important;
+    font-size: 17px!important;
+}
